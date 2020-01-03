@@ -1,0 +1,41 @@
+html,body{
+    background-color: #242435;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+.box-center{
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    margin-top: 250px;
+    text-align: center;
+}
+.title{
+    color: #ffffff;
+    display: inline-block;
+}
+.title2{
+    font-style: italic;
+    margin-left: 5px;
+    font-size: x-large;
+}
+.submit-button{
+    background-color: #2e2f45;
+    margin-left: 8px;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.username-field{
+    background-color: #2e2f45;
+    width:194px;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+}
