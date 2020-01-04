@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, withRouter, Switch, Route } from 'react-router-dom';
-import User from './User';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Home';
-import '../style/App.css';
+import UserInfo from './UserInfo';
 
 export default class App extends Component{
+	constructor(props){
+		super(props);
+	}
+
     render() {
 		return(
 			<div>
@@ -19,10 +22,10 @@ export default class App extends Component{
 							)} 
 						/>
 						<Route 
-							exact path={"/user"} 
+							exact path={"/user-info"} 
 							render={props => (
-								<User 
-									{...props}
+								<UserInfo
+									{...props} username={this.props.username}
 								/>
 							)} 
 						/>	

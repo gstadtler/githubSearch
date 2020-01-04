@@ -1,50 +1,52 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+//import { withRouter } from 'react-router-dom';
 
-export default class Home extends Component{
-    constructor(props){
+export default class Home extends Component {
+    constructor(props) {
         super(props);
-    
+
         this.state = {
             username: ""
         };
-    
+
         this.handleChange = this.handleChange.bind(this);
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleChange(event){
+    handleChange(event) {
         this.setState({
             [event.target.name]: event.target.value
         });
     }
-    handleClick(event){
-        console.log("buscando");
-        event.preventDefault();
 
+    handleClick() {
+        this.props.history.push("/user-info");
     }
+
     render(){
-        return(
+        return (
             <div className="home">
                 <div className="box-center">
                     <h2 className="title">GitHub</h2>
                     <p className="title title2">Search</p>
-                    <input 
-                        className="username-field" 
+                    <input
+                        className="username-field"
                         type="text"
-                        name="username" 
+                        name="username"
                         placeholder="Enter with your github username"
-                        value={this.state.username} 
+                        value={this.state.username}
                         onChange={this.handleChange} />
-                    <input 
-                        className="submit-button" 
-                        type="submit" 
-                        value="search" 
+                    <input
+                        className="submit-button"
+                        type="submit"
+                        value="search"
                         onClick={this.handleClick} />
                 </div>
+                <h3>{this.state.username}</h3>
             </div>
         )
     }
 }
+
 
 //export default withRouter(Home);
