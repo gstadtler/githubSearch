@@ -4,10 +4,6 @@ import Home from './Home';
 import UserInfo from './UserInfo';
 
 export default class App extends Component{
-	constructor(props){
-		super(props);
-	}
-
     render() {
 		return(
 			<div>
@@ -25,7 +21,7 @@ export default class App extends Component{
 							exact path={"/user-info"} 
 							render={props => (
 								<UserInfo
-									{...props} username={this.props.username}
+									{...props}
 								/>
 							)} 
 						/>	
@@ -35,5 +31,3 @@ export default class App extends Component{
 		)
 	}
 }
-
-// export default withRouter(App);

@@ -1,69 +1,40 @@
 import React, { Component } from "react";
-import Home from './Home';
-//import { withRouter } from "react-router-dom";
 
 export default class UserInfo extends Component {
     constructor(props) {
         super(props);
 
-    this.state = {
-        avatar: "some image",
-        email: "some email",
-        seguidores: "some followers",
-        seguindo: "some friends",
-        bio: "something about me"
-    };
-
-    this.handleUserInfo = this.handleUserInfo.bind(this);
-    //this.handleRepos = this.handleRepos.bind(this);
-    this.setUserData = this.setUserData.bind(this);
-    //this.setRepoData = this.setRepoData.bind(this);
+        const data = this.props.location.state
+        this.state = {
+            user_username: data.username,
+            user_avatar: data.avatar,
+            user_email: data.email,
+            user_followers: data.seguidores,
+            user_following: data.seguindo,
+            user_bio: data.bio,
+            user_repos_data: data.repos_data
+        };
     }
-
-    handleUserInfo() {
-        fetch(`https://api.github.com/users/${this.props.username}`)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-            });
-    }
-
-    handleRepos(){
-
-    }
-
-    setUserData(avatar_url, email, followers, following, bio) {
-        this.setState({
-            avatar: avatar_url,
-            email: email,
-            seguidores: followers,
-            seguindo: following,
-            bio: bio
-        });
-    }
-
-    setRepoData(){
-
-    }
-
 
     render() {
         return (
-        <div>
-            <input type="submit" onClick={this.handleUserInfo}></input>
-            <div className="card">
-                <img src={this.state.avatar}></img>
-                <div className="container">
-                    <h3>{this.state.email}</h3>
-                    <h3>{this.state.seguidores}</h3>
-                    <h3>{this.state.seguindo}</h3>
-                    <h3>{this.state.bio}</h3>
+            <div>
+                <div className="card">
+                    <img src={this.state.user_avatar} alt=""/>
+                    <div className="container">
+                        <h3>{this.state.user_username}</h3>
+                        <h3>{this.state.user_email}</h3>
+                        <h3>{this.state.user_followers}</h3>
+                        <h3>{this.state.user_following}</h3>
+                        <h3>{this.state.user_bio}</h3>
+                    </div> 
                 </div>
+                {this.state.user_repos_data.map(repo => (
+                <div className="repos card" key={repo.id}>
+                    <h2>{repo.name}</h2>
+                </div>
+                ))}
             </div>
-            <div className="repos card">
-                <h2>test test test teste</h2>
-            </div>
-        </div>
         );
     }
 }

@@ -1,57 +1,86 @@
-html,
-body {
-  background-color: #242435;
-  font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji";
+html,body {
+    background-color: #242435;
+    font-family: "Segoe UI", Helvetica, Arial, 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 .box-center {
-  margin: auto;
-  width: 25%;
-  padding: 10px;
-  margin-top: 250px;
-  text-align: center;
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    margin-top: 250px;
+    text-align: center;
 }
 .title {
-  color: #ffffff;
-  display: inline-block;
+    color: #ffffff;
+    display: inline-block;
 }
 .title2 {
-  font-style: italic;
-  margin-left: 5px;
-  font-size: x-large;
+    font-style: italic;
+    margin-left: 5px;
+    font-size: x-large;
 }
 .submit-button {
-  background-color: #2e2f45;
-  margin-left: 8px;
-  padding: 10px;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 8px;
+    background-color: #2e2f45;
+    margin-left: 8px;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
 }
 .username-field {
-  background-color: #2e2f45;
-  width: 194px;
-  padding: 10px;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  display: inline-block;
-  border-radius: 8px;
+    background-color: #2e2f45;
+    width: 194px;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
 }
 .card {
-  background-color: #2e2f45;
-  display: inline-block;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 20%;
-  margin-left: 20px;
+    background-color: #2e2f45;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    margin-left: 20px;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .container {
-  padding: 2px 16px;
+    padding: 2px 16px;
+}
+.popup {  
+    position: fixed;  
+    width: 100%;  
+    height: 100%;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    margin: auto;  
+    background-color: rgba(0,0,0, 0.2);  
+}  
+.popup-content {  
+    position: absolute;
+    display: -webkit-inline-box;
+    left: 35%;  
+    right: 35%;  
+    top: 35%;  
+    bottom: 35%;  
+    margin: auto;  
+    border-radius: 20px;  
+    background: #2e2f45;  
+}
+.popup-text{
+    color: #ffffff;
+    padding-top: 60px;
+}
+.popup-btn{
+    cursor: pointer;
+    border-radius: 6px;
 }
