@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Tutorial de instalação e uso do app
 
-### `yarn start`
+`Essa aplicação foi desenvolvida com o create-react-app`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para sua utilização é necessário ter instalado em sua máquina o Nodejs e com ele o Node Package Manager (NPM).
+Através do NPM serão instalados e gerenciados os pacotes necessários para rodar a aplicação React.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### `Instalando o Nodejs`
 
-### `yarn test`
+- #### Para Windows OS
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Acessando o site do [NodeJS](https://nodejs.org/en/) para fazer o download. 
+Após baixado e instalado, basta abrir o próprio cmd do Windows ou alguma outra ferramenta de linha de comando
+e seguir o restante dos passos desse tutorial a partir de *Clonando repositório*. 
+*Para mais informações sobre o NPM, basta digitar o comando `npm`*
 
-### `yarn build`
+Para mais detalhes de instalação no Windows [DevMedia tutorial](https://www.devmedia.com.br/como-instalar-o-node-js-npm-e-o-react-no-windows/40329).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- #### Para OS baseado em Linux
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+No terminal, basta rodar os comandos `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash`
+e `sudo apt-get install -y nodejs`, atualizar o NPM com o comando `sudo npm install npm@latest -g` (recomendado),
+e então seguir o restante dos passos desse tutorial.
+*Para mais informações sobre o NPM, basta digitar o comando `npm`*
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para mais detalhes de instalação no Ubuntu [Tutorial](https://www.techomoro.com/how-to-install-and-setup-a-react-app-on-ubuntu-18-04-1/).
 
-### `yarn eject`
+- #### Para Mac OS
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[Tutorial de instalação e setup do ReactJS para MacOS](https://www.techomoro.com/how-to-install-and-set-up-react-on-macos-x/).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Clonando repositório`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Após ter instalado o Nodejs ou caso já o tenha instalado, basta clonar este repositório (git clone + url do repositório) ou se preferir fazer um Fork e então clonar o seu próprio Fork para um diretório local.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `Instalando pacotes (NPM Install)`
 
-## Learn More
+Com o repositório devidamente clonado, basta acessar o diretório em que o repositório foi clonado
+e rodar o comando `npm install`. Este comando vai instalar todos os pacotes necessários para rodar a aplicação.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `Iniciando o servidor de desenvolvimento (NPM Start)`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+O comando utilizado para iniciar o servidor localmente, no ambiente de desenvolvimento, é o `npm start`.
+Quando o servidor for iniciado, automaticamente será aberta a página *http://localhost:3000* no browser,
+onde a aplicação estará rodando em modo de desenvolvimento.
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Mais sobre React.js
 
-### Analyzing the Bundle Size
+- Mais sobre o *create-react-app* em [Documentação do Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Mais informações sobre React.js [Documentação do React](https://reactjs.org/).
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
