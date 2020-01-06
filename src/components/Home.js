@@ -76,7 +76,7 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div className="home">
+            <div>
                 <div className="box-center">
                     <h2 className="title">GitHub</h2>
                     <p className="title title2">Search</p>

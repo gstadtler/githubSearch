@@ -3,12 +3,21 @@ html,body {
     font-family: "Segoe UI", Helvetica, Arial, 
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
+/*Home - Tela de busca*/
 .box-center {
     margin: auto;
     width: 25%;
     padding: 10px;
     margin-top: 250px;
     text-align: center;
+}
+.box-center-2 {
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    display: table-cell;
 }
 .title {
     color: #ffffff;
@@ -18,6 +27,12 @@ html,body {
     font-style: italic;
     margin-left: 5px;
     font-size: x-large;
+}
+.title2-results-page {
+    font-style: italic;
+    margin-left: 5px;
+    font-size: x-large;
+    margin-right: 10px;
 }
 .submit-button {
     background-color: #2e2f45;
@@ -39,20 +54,6 @@ html,body {
     text-align: center;
     display: inline-block;
     border-radius: 8px;
-}
-.card {
-    background-color: #2e2f45;
-    display: inline-block;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 20%;
-    margin-left: 20px;
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-.container {
-    padding: 2px 16px;
 }
 .popup {  
     position: fixed;  
@@ -83,4 +84,35 @@ html,body {
 .popup-btn{
     cursor: pointer;
     border-radius: 6px;
+}
+/*UserInfo - Tela de resultados*/
+.card {
+    background-color: #2e2f45;
+    color: #ffffff;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.container {
+    padding: 2px 16px;
+}
+.repos-card{
+    background-color: #2e2f45;
+    color: #ffffff;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-top: 15px;
+    width: 440px;
+}
+.repos{
+    margin-left: 300px;
+
 }
