@@ -12,7 +12,7 @@ export default class UserInfo extends Component {
             user_followers: data.seguidores,
             user_following: data.seguindo,
             user_bio: data.bio,
-            user_repos_data: data.repos_data
+            user_repos_data: data.repos_data,
         };
     }
 
@@ -53,12 +53,12 @@ export default class UserInfo extends Component {
                     </div>
                 </div>
                 <div className="repos">
-                {this.state.user_repos_data.map(repo => (
-                    <div className="repos-card" key={repo.id}>
-                        <p>{repo.name}</p>
-                        <p><i className="fas fa-star"> {repo.stargazers_count}</i></p>
-                    </div>
-                ))};
+                    {this.state.user_repos_data.map(repo => (
+                        <div className="repos-card" key={repo.id}>
+                            <p>{repo.name}</p>
+                            <p><i className="fas fa-star"> {repo.stargazers_count}</i></p>
+                        </div>
+                    ))};
                 </div>
             </div>
         );
