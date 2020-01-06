@@ -20,8 +20,8 @@ Para mais detalhes de instalação no Windows [DevMedia tutorial](https://www.de
 
 - #### Para OS baseado em Linux
 
-No terminal, basta rodar o comando `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install -y nodejs`, atualizar o NPM com o comando `sudo npm install npm@latest -g` (recomendado),
+No terminal, basta rodar o comandos `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash`
+e `sudo apt-get install -y nodejs`, atualizar o NPM com o comando `sudo npm install npm@latest -g` (recomendado),
 e então seguir o restante dos passos desse tutorial.
 *Para mais informações sobre o NPM, basta digitar o comando `npm`*
 
