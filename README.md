@@ -53,3 +53,7 @@ onde a aplicação estará rodando em modo de desenvolvimento.
 
 - Mais informações sobre React.js [Documentação do React](https://reactjs.org/).
 
+### Cypress
+
+- A ferramenta cypress foi utilizada para fazer testes automatizados para a aplicação, para instalar e rodar os testes basta checar esse [tutorial](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
+
