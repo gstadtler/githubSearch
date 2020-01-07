@@ -55,5 +55,8 @@ onde a aplicação estará rodando em modo de desenvolvimento.
 
 ### Cypress
 
-- A ferramenta cypress foi utilizada para fazer testes automatizados para a aplicação, para instalar e rodar os testes basta checar esse [tutorial](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
+- A ferramenta Cypress foi utilizada para fazer testes automatizados para esta aplicação, para instalar o Cypress basta acessar o diretório da aplicação e executar o comando `npm install cypress --save-dev`. 
+- Após instalado, para abrir o dashboard do Cypress no browser, executar o comando `yarn cypress:open`. Quando o dashboard abrir estarão listados os testes numa pasta chamada githubsearch, basta clicar em um deles e o Cypress rodará o teste, ou então clicar no botão `Run all specs` e o Cypress rodará todos os testes.
+- Para rodar todos os testes diretamente no terminal, basta executar o comando `yarn cypress`.
+- Para mais informações sobre a ferramenta e como utilizá-la -> [Cypress tutorial](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
 
