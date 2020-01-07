@@ -53,10 +53,12 @@ onde a aplicação estará rodando em modo de desenvolvimento.
 
 - Mais informações sobre React.js [Documentação do React](https://reactjs.org/).
 
-### Cypress
+### Testes automatizados com Cypress
 
 - A ferramenta Cypress foi utilizada para fazer testes automatizados para esta aplicação, para instalar o Cypress basta acessar o diretório da aplicação e executar o comando `npm install cypress --save-dev`. 
+
+- Importante! Para rodar os testes, a aplicação deve estar rodando também, caso contrário o Cypress não conseguirá acessar os dados necessários para rodar os testes.
+
 - Após instalado, para abrir o dashboard do Cypress no browser, executar o comando `yarn cypress:open`. Quando o dashboard abrir estarão listados os testes numa pasta chamada githubsearch, basta clicar em um deles e o Cypress rodará o teste, ou então clicar no botão `Run all specs` e o Cypress rodará todos os testes.
 - Para rodar todos os testes diretamente no terminal, basta executar o comando `yarn cypress`.
 - Para mais informações sobre a ferramenta e como utilizá-la -> [Cypress tutorial](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
-

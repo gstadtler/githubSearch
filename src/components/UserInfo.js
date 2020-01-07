@@ -36,27 +36,28 @@ export default class UserInfo extends Component {
                         name="username"
                         value={this.state.user_username}
                         readOnly
+                        data-cy="username"
                     />
                 </div>
-                <div className="card">
+                <div className="card" data-cy="profile">
                     <img src={this.state.user_avatar} alt="" width="100%" />
                     <div className="container">
                         <h3>@{this.state.user_username}</h3>
-                        <h3>{this.state.user_email}</h3>
-                        <p>
+                        <h3 data-cy="email"><i className="fas fa-envelope"> {this.state.user_email}</i></h3>
+                        <p data-cy="followers">
                             <i className="fas fa-users"> {this.state.user_followers}</i>
                         </p>
-                        <p>
+                        <p data-cy="following">
                             <i className="fas fa-user-check"></i> {this.state.user_following}
                         </p>
-                        <p>{this.state.user_bio}</p>
+                        <p data-cy="bio">{this.state.user_bio}</p>
                     </div>
                 </div>
                 <div className="repos">
                     {this.state.user_repos_data.map(repo => (
-                        <div className="repos-card" key={repo.id}>
-                            <p>{repo.name}</p>
-                            <p><i className="fas fa-star"> {repo.stargazers_count}</i></p>
+                        <div className="repos-card " key={repo.id} data-cy="repositories">
+                            <p data-cy="name">{repo.name}</p>
+                            <p data-cy="stars"><i className="fas fa-star"> {repo.stargazers_count}</i></p>
                         </div>
                     ))};
                 </div>

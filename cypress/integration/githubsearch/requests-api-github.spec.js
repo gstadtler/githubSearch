@@ -1,5 +1,14 @@
-describe('Request', () => {
-    it('displays a user from github API', () => {
+describe('Making requests onde the GitHub API', () => {
+    beforeEach(() => {
+        cy.visit('/');
+        cy.clearCookies();
+        cy.reload(true);
+    });
+
+    afterEach(() => {
+        cy.clearCookies();
+    });
+    it('returns a user from github API', () => {
         cy.request('https://api.github.com/users/gstadtler')
             .should((response) => {
                 expect(response.status).to.eq(200)
@@ -13,7 +22,7 @@ describe('Request', () => {
             })
     })
 
-    it('displays the user repositories from github API', () => {
+    it('returns the user repositories from github API', () => {
         cy.request('https://api.github.com/users/gstadtler/repos')
             .should((response) => {
                 expect(response.status).to.eq(200)

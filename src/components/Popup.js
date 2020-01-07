@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Popup extends Component {
     render() {
         return (
-            <div className='popup'>
+            <div className="popup">
                 <React.Fragment>
                     <link 
                         rel="stylesheet" 
@@ -12,8 +12,8 @@ class Popup extends Component {
                         crossOrigin="anonymous" 
                     />
                 </React.Fragment>
-                <div className='popup-content'>
-                    <button className="popup-btn" onClick={this.props.closePopup}><i className="fas fa-times-circle"></i></button>
+                <div className="popup-content" data-cy="popup">
+                    <button className="popup-btn" onClick={this.props.closePopup} data-cy="close-popup-btn"><i className="fas fa-times-circle"></i></button>
                     <h2 className="popup-text">{this.props.text}</h2>
                 </div>
             </div>

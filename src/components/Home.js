@@ -87,12 +87,14 @@ export default class Home extends Component {
                         placeholder="Enter with your github username"
                         value={this.state.username}
                         onChange={this.handleChange}
+                        data-cy="text-area"
                     />
                     <input
                         className="submit-button"
                         type="submit"
                         value="search"
                         onClick={this.handleClick}
+                        data-cy="submit-btn"
                     />
                 </div>
                 <div>
